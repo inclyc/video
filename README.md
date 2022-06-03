@@ -7,33 +7,6 @@
 
 ```
 .
-├── assets
-│   ├── dormitory1.mp4
-│   └── slow_traffic_small.mp4
-├── doc
-│   ├──
-│   └── present
-├── README.md
-├── result
-│   └── background_substraction
-│       ├── KNN.avi
-│       └── MOG2.avi
-├── src -- 源代码
-│   ├── background_substraction
-│   │   └── main.cpp
-│   ├── camshift
-│   │   └── camshift.cpp
-│   ├── include
-│   ├── meanshift
-│   │   └── main.cpp
-│   └── optical_flow
-│       └── main.cpp
-└── xmake.lua
-
-```
-
-```
-.
 ├── assets -- 不在仓库中，在Release中下载
 │   ├── dormitory1.mp4
 │   └── slow_traffic_small.mp4
