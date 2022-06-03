@@ -7,14 +7,14 @@
 
 ```
 .
-├── assets -- 不在仓库中，在Release中下载
+├── assets
 │   ├── dormitory1.mp4
 │   └── slow_traffic_small.mp4
-├── doc -- 报告文档
+├── doc
 │   ├──
 │   └── present
 ├── README.md
-├── result -- 不在仓库中，结果视频文件，由程序读写
+├── result
 │   └── background_substraction
 │       ├── KNN.avi
 │       └── MOG2.avi
@@ -24,6 +24,41 @@
 │   ├── camshift
 │   │   └── camshift.cpp
 │   ├── include
+│   ├── meanshift
+│   │   └── main.cpp
+│   └── optical_flow
+│       └── main.cpp
+└── xmake.lua
+
+```
+
+```
+.
+├── assets -- 不在仓库中，在Release中下载
+│   ├── dormitory1.mp4
+│   └── slow_traffic_small.mp4
+├── build -- 不在仓库中，编译好的文件
+├── doc -- 报告文档
+│   └── present
+├── package.sh -- 用来多进程打包的bash脚本
+├── README.md
+├── result -- 不在仓库中，结果视频文件，由程序读写
+│   ├── background_substraction
+│   │   ├── KNN.avi
+│   │   └── MOG2.avi
+│   ├── camshift
+│   │   └── camshift.avi
+│   ├── meanshift
+│   │   └── meanshift.avi
+│   └── optical_flow
+│       └── optical_flow.avi
+├── src
+│   ├── background_substraction
+│   │   └── main.cpp
+│   ├── camshift
+│   │   └── camshift.cpp
+│   ├── include
+│   │   └── avi_fourcc.h
 │   ├── meanshift
 │   │   └── main.cpp
 │   └── optical_flow
