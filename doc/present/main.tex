@@ -4,6 +4,10 @@
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{listings}
+\usepackage{booktabs}
+\usepackage{mathtools}
+
+\renewcommand{\d}{\mathrm{d}}
 
 
 \title{运动目标检测}
@@ -15,6 +19,15 @@
 \input{lst_style.tex}
 \begin{document}
 \frame{\titlepage}
+
+\begin{frame}
+    \frametitle{目录}
+
+    \tableofcontents
+
+\end{frame}
+
+\input{sections/frame_diff.tex}
 \input{sections/bs.tex}
 \input{sections/shift.tex}
 \input{sections/optical_flow.tex}
