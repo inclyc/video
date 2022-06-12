@@ -50,7 +50,7 @@
     \frametitle{OpenCV中实现帧差分法}
 
     \begin{enumerate}
-        \item 三帧差分法与双帧差分法类似，取相邻三帧按照下式计算，多进行一次“与”操作
+        \item 使用read函数得到当前帧的内容，absdiff函数可得到两帧绝对值的差，将所得图像阈值化，可得到目标图像。
         \item 使用findContours函数得到目标图像中物体轮廓，框选出运动物体。
     \end{enumerate}
 
